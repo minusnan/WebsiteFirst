@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Рекламное агентство "-nan"</title>
+    <link href="mystyle.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class = "container">
+	<div class = "wrapperHeader">
+	<a href = "#top" class = "logo"> -nan </a>
+	<ul class = "menu">
+		<li><a href = "#about">О нас</a></li>
+		<li><a href = "#popularity">Где можно увидеть нашу рекламу?</a></li>
+		<li><a href = "#cooperate">Сотрудничество</a></li>
+	</ul>
+	</div>
+</div>
+</header>
+<div class="container2" id="about">
+
+    <div class="text">
+    <h2>Добро пожаловать на домашнюю страницу нашего агентства "-nan"!</h2>
+    <h3>У нас вы можете заказать различную рекламу своих продуктов и услуг.</h3>
+    </div>
+
+
+</div>
+<div class="container3">
+    <div id="slides">
+        <img src="media/bner1.jpg" class="slide showing" height="600">
+        <img src="media/bner2.jpg" class="slide" height="600">
+        <img src="media/bner3.jpg" class="slide" height="600">
+    </div>
+</div>
+<br>
+<br>
+<br>
+	<h4>Мы занимаемся рекламой различных брендов на уличных стендах, баннерах и в общественном транспорте различных городов России. </h4>
+	<br>
+	<br>
+<div class="num" id="popularity">
+    <img id="image" src="media/number 1.jpg" onClick="imgsrc();" height="400" width="850" >
+    <h7> На данных изображениях вы сможете оценить то, насколько распространена наша реклама.(Кликните для смены изображения)</h7>
+</div>
+<div class="container4" id="cooperate">
+          <div class="form">
+            <form class="contact_form" action="mailto:efimkakirillka@gmail.com" method="post" name="contact_form" enctype="text/plain">
+
+                  <ul>
+
+                      <li>
+                          <h2>Для дальнейшего сотрудничества заполните форму, чтобы мы смогли свзязаться с вами:</h2>
+                          
+                      </li>
+                      <li>
+                          <label>ФИО представителя:</label>
+                          <input type="text" name="name" placeholder="Иванов Иван Иванович" required/>
+                      </li>
+                      <li>
+                          <label>Email:</label>
+                          <input type="text" name="email" placeholder="email@mail.ru" required  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+
+                      </li>
+                      <li>
+                          <label>Телефон:</label>
+                          <input type="text" name="website" placeholder="(7/8)8005553535" required pattern="(8|7).+"/>
+
+                      </li>
+                      <li>
+                          <label>Комментарий:</label>
+                          <textarea name="message" cols="40" rows="6" required > </textarea>
+                      </li>
+                      <li>
+                          <button type="submit">Отправить</button>
+                      </li>
+
+                  </ul>
+              </form>
+          </div>
+</div>
+
+</div>
+</body>
+<script src="scripts/banner.js"></script>
+<script src="scripts/mail.js"></script>
+<script src="scripts/number.js"></script>
